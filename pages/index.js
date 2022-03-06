@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,8 +13,13 @@ export default function Home() {
       <h1>메인 페이지</h1>
 
       <nav>
-        <a href="/" style={{color:'red'}}>메인</a>
-        <a href="/about">어바웃</a>
+        <Link href="/">
+          <a style={{ color: "pink" }}>메인</a>
+        </Link>
+
+        <Link href="/about">
+          <a style={{ color: "" }}>어바웃</a>
+        </Link>
       </nav>
     </>
   )

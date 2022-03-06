@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -12,9 +13,14 @@ export default function About() {
       <h1>앱 소개 페이지</h1>
 
       <nav>
-        <a href="/">메인</a>
-        <a href="/about" style={{color:'red'}}>어바웃</a>
+        <Link href="/">
+          <a style={{ color: "" }}>메인</a>
+        </Link>
+
+        <Link href="/about">
+          <a style={{ color: "pink" }}>어바웃</a>
+        </Link>
       </nav>
     </>
-  )
+  );
 }
